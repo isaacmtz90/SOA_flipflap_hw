@@ -23,6 +23,6 @@ module TsvBuddy
     lines = tsv.split(NEWLINE)
     headers = lines.first.split(TAB)
     result = lines.map { |line| line_to_hash(headers, line) }
-    result.drop(1)
+    result.drop(1) # removes the first element (headers hash)
   end
 end
