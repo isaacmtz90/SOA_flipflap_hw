@@ -7,7 +7,7 @@ module YamlBuddy
     @data = YAML.load(input_yaml)
   end
 
-  def to_yaml(data)
+  def to_yaml
     data.to_yaml
   end
 end
